@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">RatesDemo</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div id="container"style="height:fit-content;border-style: dotted solid;display: flex;column-gap: 20px;justify-content: space-between;float:left;">
+    <div class="nomics-ticker-widget" data-name="Bitcoin" data-base="BTC" data-quote="USD"display:inline-block;>
+    </div>
+    <script src="https://widget.nomics.com/embed.js"></script>
+
+    <div class="nomics-ticker-widget" data-name="Ethereum" data-base="ETH" data-quote="USD"display:inline-block;></div>
+    <script src="https://widget.nomics.com/embed.js"></script>
+
+    <div class="nomics-ticker-widget" data-name="IOTA (MIOTA)" data-base="IOT" data-quote="USD"display:inline-block;></div>
+    <script src="https://widget.nomics.com/embed.js"></script>
+
+    <div class="nomics-ticker-widget" data-name="Cardano" data-base="ADA" data-quote="USD"display:inline-block;></div>
+    <script src="https://widget.nomics.com/embed.js"></script>
+</div>
